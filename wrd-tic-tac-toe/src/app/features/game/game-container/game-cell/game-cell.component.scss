@@ -1,0 +1,29 @@
+.cell {
+  display: flex;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+
+  .cell__text--color {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.light-theme {
+  background-color: rgba(71, 198, 147, 0.8);
+  border: rgba(48, 198, 58, 0.78) 2px solid;
+
+  .cell__text--color {
+    color: black;
+  }
+}
+
+.dark-theme {
+  background-color: rgba(71, 198, 147, 0.8);
+  border: rgba(48, 198, 58, 0.78) 2px solid;
+
+  .cell__text--color {
+    color: black;
+  }
+}

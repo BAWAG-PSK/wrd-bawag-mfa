@@ -1,0 +1,39 @@
+<div class="clr-row clr-justify-content-center">
+  <form class="clrForm" [formGroup]="loginForm">
+    <div class="clr-form-control">
+      <label for="username" class="clr-control-label">Username</label>
+      <div class="clr-control-container">
+        <div class="clr-input-wrapper">
+          <input type="text" id="username" class="clr-input" formControlName="username">
+          <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="clr-form-control">
+      <label for="password" class="clr-control-label">Password</label>
+      <div class="clr-control-container">
+        <div class="clr-input-wrapper">
+          <input [type]="passwordShow?'text':'password'" id="password" class="clr-input" formControlName="password">
+          <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+          <div class="clr-display-inline-block">
+            <clr-icon shape="eye"></clr-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-primary" (click)="login()">Login</button>
+
+    <div class="alert alert-danger" role="alert" *ngIf="!loginForm.valid && !loginForm.pristine">
+      <div class="alert-items">
+        <div class="alert-item static">
+          <div class="alert-icon-wrapper">
+            <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
+          </div>
+          <span class="alert-text">Username or password incorrect!</span>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

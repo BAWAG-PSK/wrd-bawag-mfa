@@ -1,0 +1,34 @@
+{
+  "modules": {
+    "wrd-cl": {
+      "assetsUrl": "https://wrdbawagmfa.z6.web.core.windows.net/wrd-cl/",
+      "apiUrl": null,
+      "path": "/wrd-cl"
+    },
+    "wrd-login": {
+      "assetsUrl": "https://wrdbawagmfa.z6.web.core.windows.net/wrd-login/",
+      "apiUrl": null,
+      "path": "/login"
+    },
+    "wrd-tic-tac-toe": {
+      "assetsUrl": "https://wrdbawagmfa.z6.web.core.windows.net/wrd-tic-tac-toe/",
+      "apiUrl": null,
+      "path": "/tic-tac-toe"
+    },
+    "wrd-quiz": {
+      "assetsUrl": "https://wrdbawagmfa.z6.web.core.windows.net/wrd-quiz/",
+      "apiUrl": null,
+      "path": "/quiz"
+    },
+    "wrd-statistics": {
+      "assetsUrl": "https://wrdbawagmfa.z6.web.core.windows.net/wrd-statistics/",
+      "apiUrl": null,
+      "path": "/statistics"
+    },
+    "wrd-profile": {
+      "assetsUrl": "https://wrdbawagmfa.z6.web.core.windows.net/wrd-profile/",
+      "apiUrl": null,
+      "path": "/profile"
+    }
+  }
+}

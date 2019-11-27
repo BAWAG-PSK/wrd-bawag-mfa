@@ -1,0 +1,34 @@
+{
+  "modules": {
+    "wrd-cl": {
+      "assetsUrl": "http://localhost:50001",
+      "apiUrl": null,
+      "path": "/wrd-cl"
+    },
+    "wrd-login": {
+      "assetsUrl": "http://localhost:50002",
+      "apiUrl": null,
+      "path": "/login"
+    },
+    "wrd-tic-tac-toe": {
+      "assetsUrl": "http://localhost:50003",
+      "apiUrl": null,
+      "path": "/tic-tac-toe"
+    },
+    "wrd-quiz": {
+      "assetsUrl": "http://localhost:50004",
+      "apiUrl": null,
+      "path": "/quiz"
+    },
+    "wrd-statistics": {
+      "assetsUrl": "http://localhost:50005",
+      "apiUrl": null,
+      "path": "/statistics"
+    },
+    "wrd-profile": {
+      "assetsUrl": "http://localhost:50006",
+      "apiUrl": null,
+      "path": "/profile"
+    }
+  }
+}

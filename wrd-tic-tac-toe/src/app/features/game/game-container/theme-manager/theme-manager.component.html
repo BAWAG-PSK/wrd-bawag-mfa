@@ -1,0 +1,9 @@
+<div class="themes-container">
+  <span>Themes</span>
+  <button type="button" class="btn btn-link" [ngClass]="{ 'btn-sm': activeTheme ===  Theme.LIGHT}"
+          (click)="changeTheme(Theme.LIGHT)">Light
+  </button>
+  <button type="button" class="btn btn-link" [ngClass]="{ 'btn-sm': activeTheme ===  Theme.DARK}"
+          (click)="changeTheme(Theme.DARK)">Dark
+  </button>
+</div>

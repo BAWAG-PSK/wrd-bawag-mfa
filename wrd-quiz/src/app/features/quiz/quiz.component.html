@@ -1,0 +1,12 @@
+<h1>Quiz on Important Facts</h1>
+
+<div class="quiz-container">
+  <app-question id="quiz" [question]="getQuestion(currentSlide)" (answerSet)="lockAnswer($event)"></app-question>
+</div>
+
+<button id="previous" class="btn btn-secondary" (click)="showPreviousSlide()" [ngStyle]="{ display: currentSlide === 0 ? 'none' : 'inline-block' }">Previous Question</button>
+<button id="next" class="btn btn-primary" (click)="showNextSlide()" [ngStyle]="{ display: currentSlide === numQuestions() -1 ? 'none' : 'inline-block' }">Next Question</button>
+
+<button id="submit" class="btn btn-primary" (click)="showResults()" [ngStyle]="{ display: currentSlide === numQuestions() -1 ? 'inline-block' : 'none' }">Submit Quiz</button>
+
+<div id="results"></div>

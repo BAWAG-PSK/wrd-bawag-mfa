@@ -1,0 +1,22 @@
+<div class="main-container">
+  <header class="header header-6">
+<!--    <div class="branding">-->
+<!--      <img class="logo" src="assets/svg/logo.svg" alt="Lucy Web Lib Logo" routerLink="/home">-->
+<!--    </div>-->
+    <div class="header-nav">
+      <a routerLink="quiz" class="nav-link nav-text" [ngClass]="{active: selectedMenu === menu.QUIZ}"
+         (click)="selectedMenu = menu.QUIZ">Quiz</a>
+      <a routerLink="tic-tac-toe" class="nav-link nav-text" [ngClass]="{active: selectedMenu === menu.TIC_TAC_TOE}"
+         (click)="selectedMenu = menu.TIC_TAC_TOE">Tic Tac Toe</a>
+      <a routerLink="statistics" class="nav-link nav-text" [ngClass]="{active: selectedMenu === menu.STATISTICS}"
+         (click)="selectedMenu = menu.STATISTICS">Statistics</a>
+      <a routerLink="profile" class="nav-link nav-text" [ngClass]="{active: selectedMenu === menu.PROFILE}"
+         (click)="selectedMenu = menu.PROFILE">Profile</a>
+    </div>
+  </header>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

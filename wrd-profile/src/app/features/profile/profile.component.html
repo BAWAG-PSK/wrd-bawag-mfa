@@ -1,0 +1,24 @@
+<form clrForm [formGroup]="profileForm">
+  <span class="clr-sr-only">Tabbing through form inputs will trigger validation messages to be read aloud.</span>
+
+  <clr-input-container>
+    <label>First name</label>
+    <input clrInput type="text" formControlName="firstName" name="firstName" required />
+    <clr-control-error>We need your first name for legal compliance</clr-control-error>
+  </clr-input-container>
+  <clr-input-container>
+    <label>Last name (Optional)</label>
+    <input clrInput type="text" formControlName="lastName" name="lastName" />
+    <clr-control-error>We need your last name for legal compliance</clr-control-error>
+  </clr-input-container>
+  <clr-input-container>
+    <label>Nickname</label>
+    <input clrInput type="text" formControlName="nickName" name="nickName" required />
+    <clr-control-error>We need your nickname for legal compliance</clr-control-error>
+  </clr-input-container>
+
+  <!-- TODO: avatar selector, also which src path would work in composition mode? -->
+  <ngx-avatar src="assets/fox-avatar.jpg"></ngx-avatar>
+
+  <button class="btn btn-primary" (click)="save()">Save</button>
+</form>

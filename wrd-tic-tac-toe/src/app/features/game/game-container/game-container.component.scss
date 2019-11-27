@@ -1,0 +1,24 @@
+.game-section {
+  border: 1px solid #77aaff;
+  box-shadow: -1px 1px #77aaff,
+  -2px 2px #77aaff,
+  -3px 3px #77aaff,
+  -4px 4px #77aaff,
+  -5px 5px #77aaff;
+
+  .container--width {
+    max-width: 215px;
+  }
+
+  .container--relative {
+    position: relative;
+  }
+
+  &.dark-theme {
+    background-color: #fefefe;
+  }
+
+  &.light-theme {
+    background-color: #fefefe;
+  }
+}

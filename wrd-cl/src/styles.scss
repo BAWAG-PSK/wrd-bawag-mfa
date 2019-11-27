@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Roboto-light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./assets/fonts/roboto-light.woff2') format('woff2'), url('./assets/fonts/roboto-light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto-regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/fonts/roboto-regular.woff2') format('woff2'), url('./assets/fonts/roboto-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto-medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./assets/fonts/roboto-medium.woff2') format('woff2'), url('./assets/fonts/roboto-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./assets/fonts/roboto-bold.woff2') format('woff2'), url('./assets/fonts/roboto-bold.woff') format('woff');
+}
+
+.app-header {
+  margin: 15px;
+  background-color: #fff;
+}

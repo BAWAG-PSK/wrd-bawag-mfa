@@ -1,0 +1,20 @@
+{
+  "name": "@wrd-web/shared",
+  "version": "0.0.2",
+  "scripts": {
+    "docs-gen": "compodoc -p ./tsconfig.compodoc.json --theme readthedocs -d ./docs/compodoc/ -n \"Wrd Web Shared Lib Docs\"",
+    "docs-serve": "compodoc -d ./docs/compodoc/ -s -r 51001 -o",
+    "docs": "npm run docs-gen && npm run docs-serve"
+  },
+  "peerDependencies": {
+    "@angular/common": "~8.2.5",
+    "@angular/core": "~8.2.5"
+  },
+  "devDependencies": {
+    "@angular-builders/jest": "~8.0.4",
+    "@compodoc/compodoc": "~1.1.10",
+    "@types/jest": "~24.0.16",
+    "jest": "~24.8.0",
+    "ng-bullet": "~1.0.3"
+  }
+}

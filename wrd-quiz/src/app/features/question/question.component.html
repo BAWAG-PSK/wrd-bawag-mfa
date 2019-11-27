@@ -1,0 +1,11 @@
+<div class="slide">
+  <div class="question"> {{ question.question }} </div>
+  <div class="answers">
+    <div *ngFor="let answer of question.answers">
+      <label>
+        <input type="radio" name="{{ question.id }}" value="{{ answer.value }}" (change)="answerSet.emit({questionId: question.id, questionAnswer: answer.key})">
+        {{ answer.key }}: {{ answer.value }}
+      </label>
+    </div>
+  </div>
+</div>

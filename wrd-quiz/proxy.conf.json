@@ -1,0 +1,9 @@
+{
+  "/login": {
+    "target": "http://localhost:50000/login",
+    "secure": false,
+    "pathRewrite": {
+      "^/login": ""
+    }
+  }
+}

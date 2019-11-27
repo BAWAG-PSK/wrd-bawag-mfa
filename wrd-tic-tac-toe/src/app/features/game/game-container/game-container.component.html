@@ -1,0 +1,20 @@
+<section class="game-section dark-theme" appTheme>
+  <div>
+    <app-score></app-score>
+    <div class="clr-row clr-justify-content-center clr-align-content-center">
+      <div class="clr-row h-50 clr-justify-content-center clr-align-content-center container--width container--relative">
+        <app-finish-line [position]="position"></app-finish-line>
+
+        <div *ngFor="let item of cells;">
+          <app-game-cell [cellPosition]="item"></app-game-cell>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clr-row clr-justify-content-center">
+    <app-reset-game></app-reset-game>
+  </div>
+  <div class="clr-row clr-justify-content-center">
+    <app-theme-manager></app-theme-manager>
+  </div>
+</section>
