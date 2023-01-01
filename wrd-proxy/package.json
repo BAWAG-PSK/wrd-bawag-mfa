@@ -14,7 +14,7 @@
   "author": "BAWAG P.S.K.",
   "license": "BAWAGPSK",
   "dependencies": {
-    "config": "~3.1.0",
+    "config": "~3.3.8",
     "cookie-parser": "latest",
     "cors": "^2.8.5",
     "express": "^4.17.1",
